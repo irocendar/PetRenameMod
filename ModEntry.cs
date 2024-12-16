@@ -90,6 +90,9 @@ namespace PetRenameMod
 
         private void CheckNearby(GameLocation location, int x, int y, Farmer who)
         {
+            if (!Config.Enabled)
+                return;
+            
             Monitor.Log($"{Game1.player.facingDirection}", LogLevel.Debug);
             
             int targetX = Game1.player.TilePoint.X;
