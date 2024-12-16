@@ -74,12 +74,7 @@ namespace PetRenameMod
                 return;
 
             if (this.Config.KeyBind.JustPressed())
-            {
                 this.CheckNearby(Game1.player.currentLocation, Game1.player.StandingPixel.X, Game1.player.StandingPixel.Y, Game1.player);
-                // this.Monitor.Log($"{Game1.player.getPet().Name}", LogLevel.Debug);
-                // Game1.activeClickableMenu = new NamingMenu(RenameAnimal, "Enter New Pet Name:", Game1.player.getPet().Name);
-                // this.Monitor.Log($"{Game1.player.getPet().Name}", LogLevel.Debug);
-            }
         }
 
         private void RenameAnimal(string name)
@@ -92,8 +87,6 @@ namespace PetRenameMod
         {
             if (!Config.Enabled)
                 return;
-            
-            Monitor.Log($"{Game1.player.facingDirection}", LogLevel.Debug);
             
             int targetX = Game1.player.TilePoint.X;
             int targetY = Game1.player.TilePoint.Y;
@@ -122,7 +115,6 @@ namespace PetRenameMod
                     if (!(current.Tile == Game1.player.Tile))
                         continue;
                     this._pet = (Pet)current;
-                    Monitor.Log($"Name: {current.Name}, Position: {current.Position}, Tile: {current.TilePoint}", LogLevel.Debug);
                     break;
                 }
             }
@@ -135,7 +127,6 @@ namespace PetRenameMod
                         if (!(current.TilePoint.X == targetX && current.TilePoint.Y == targetY))
                             continue;
                         this._pet = (Pet)current;
-                        Monitor.Log($"Name: {current.Name}, Position: {current.Position}, Tile: {current.TilePoint}", LogLevel.Debug);
                     }
                 }
 

@@ -6,5 +6,5 @@
   "UniqueID": "irocendar.PetRename",
   "EntryDll": "PetRenameMod.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [ 30108 ]
 }
