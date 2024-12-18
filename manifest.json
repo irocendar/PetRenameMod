@@ -1,10 +1,10 @@
 ﻿{
   "Name": "Pet Rename",
   "Author": "irocendar",
-  "Version": "0.1.0",
+  "Version": "0.1.1",
   "Description": "Allows you to rename your pet without editing the save.",
   "UniqueID": "irocendar.PetRename",
   "EntryDll": "PetRenameMod.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": [ 30108 ]
+  "UpdateKeys": [ "Nexus:30108" ]
 }
